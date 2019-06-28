@@ -42,6 +42,7 @@ void *stream_process(void *p) {
             fprintf(stderr,"%ld\n", _i);
             unsigned long j;for (j=0;j<_i;j++) {
                 char* str = _pool[j];
+                // you can put your logic in here
                 free(str);
             }
             free(_pool);
